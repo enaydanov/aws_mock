@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT=$(dirname $(readlink -f "$0"))
+ROOT=$(cd "$(dirname "$0")"; pwd -P)
 
 set -xe
 

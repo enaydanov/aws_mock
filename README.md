@@ -2,6 +2,7 @@
 Mock for AWS API
 
 # Installation
+- It developed and tested on Debian-like OSes only
 - Make sure you have Python 3.10
 - install the Python requirements from `requirements.txt`
 
@@ -42,8 +43,7 @@ If you want to make SCT work with the same CA, you need to run this script in SC
 
     $ docker run -it --rm -p 443:443 aws_mock
 
-
-# Running aws_mock server with mapped source files:
+## Run aws_mock server with mapped source files using `run.sh` script:
 
     $ ./run.sh
 
