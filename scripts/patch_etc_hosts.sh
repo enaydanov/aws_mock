@@ -13,7 +13,7 @@ fi
 AWS_MOCK_IP=${1:-127.0.0.1}
 
 echo ">>> Add hosts to /etc/hosts:"
-cat <<EOF | tee --append /etc/hosts
+cat <<EOF | tee -a /etc/hosts
 ### ADDED BY AWS MOCK TOOL ###
 ${AWS_MOCK_IP}  ec2.eu-north-1.amazonaws.com
 ${AWS_MOCK_IP}  ec2.eu-west-2.amazonaws.com
