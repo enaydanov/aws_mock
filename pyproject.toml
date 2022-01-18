@@ -14,19 +14,19 @@ license = "Apache-2.0"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Flask = "2.0.2"
-requests = "2.26.0"
+Flask = "2.0.3"
+requests = "2.27.1"
 uWSGI = "2.0.20"
 pymongo = "4.0.1"
-cryptography = "36.0.0"
+cryptography = "36.0.1"
 
 [tool.poetry.dev-dependencies]
-lxml = "4.7.1"
+lxml = "4.8.0"
 beautifulsoup4 = "4.10.0"
-boto3 = "1.20.24"
+boto3 = "1.21.7"
 pylint = "2.12.2"
-pytest = "6.2.5"
-boto3-stubs = { version = "1.20.24", extras = ["ec2", "s3"] }
+pytest = "7.0.1"
+boto3-stubs = { version = "1.21.7", extras = ["ec2", "s3"] }
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

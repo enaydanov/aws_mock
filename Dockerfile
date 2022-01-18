@@ -1,4 +1,4 @@
-FROM python:3.10.1-slim-bullseye as base
+FROM python:3.10.2-slim-bullseye as base
 
 FROM base as apt_base
 ENV DEBIAN_FRONTEND=noninteractive

@@ -61,12 +61,12 @@ def getrandbits() -> Mock:
 @pytest.fixture(scope="session")
 def ec2_client(run_all_tests: bool) -> EC2Client:  # pylint: disable=redefined-outer-name
     if not run_all_tests:
-        pytest.skip(msg="This test requires a running AWS Mock service")
+        pytest.skip(reason="This test requires a running AWS Mock service")
     return boto3.client("ec2", region_name=REGION_NAME)
 
 
 @pytest.fixture(scope="session")
 def ec2_resource(run_all_tests: bool) -> EC2ServiceResource:  # pylint: disable=redefined-outer-name
     if not run_all_tests:
-        pytest.skip(msg="This test requires a running AWS Mock service")
+        pytest.skip(reason="This test requires a running AWS Mock service")
     return boto3.resource("ec2", region_name=REGION_NAME)
