@@ -100,7 +100,7 @@ def index():  # pylint: disable=too-many-return-statements
         case "DescribeAvailabilityZones":
             return describe_availability_zones(region_name=region_name)
         case "DescribeImages":
-            return describe_images(region_name=region_name)
+            return describe_images(region_name=region_name, image_id=request.form.get("ImageId.1"))
         case "DescribeVpcs":
             return describe_vpcs()
         case "CreateSecurityGroup":

@@ -1,4 +1,9 @@
 MASTER_REGION_NAME = "eu-west-2"
+MASTER_REGION_BASE_IMAGE = {
+    "id": "ami-0c4a211d2b7c38400",
+    "region_name": MASTER_REGION_NAME,
+    "tags": {},
+}
 MASTER_REGION_IMAGE = {
     "id": "ami-008c29ad053756fc9",
     "region_name": MASTER_REGION_NAME,
